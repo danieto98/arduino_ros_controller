@@ -51,6 +51,7 @@ Refer to the following wiring diagram, note that the order of the wires will dif
 * Connect your Arduino UNO to your computer directly through USB
 * Figure out which device the Arduino is associated with by running `ls /dev/tty*`. You should see it listed under the prefixes /dev/ttyUSB or /dev/ttyACM. If there's more than one device, try running the same command with the Arduino both connected and disconnected to the computer and comparing the difference in the devices that show up.
 * Run `roscore` on a terminal
-* Run the following command, replacing the last parameter with the device associated with your Arduino:```
+* Run the following command, replacing the last parameter with the device associated with your Arduino:
+```
 rosrun rosserial_python serial_node.py /dev/ttyACM0
 ```
